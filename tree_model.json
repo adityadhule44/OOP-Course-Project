@@ -1,0 +1,211 @@
+{
+  "feature_names": [
+    "month_apr",
+    "month_aug",
+    "month_dec",
+    "month_feb",
+    "month_jan",
+    "month_jul",
+    "month_jun",
+    "month_mar",
+    "month_may",
+    "month_nov",
+    "month_oct",
+    "month_sep",
+    "day_fri",
+    "day_mon",
+    "day_sat",
+    "day_sun",
+    "day_thu",
+    "day_tue",
+    "day_wed",
+    "X",
+    "Y",
+    "FFMC",
+    "DMC",
+    "DC",
+    "ISI",
+    "temp",
+    "RH",
+    "wind",
+    "rain"
+  ],
+  "tree": {
+    "feature": "month_dec",
+    "threshold": 0.5,
+    "left": {
+      "feature": "DMC",
+      "threshold": 118.45000076293945,
+      "left": {
+        "feature": "X",
+        "threshold": 5.5,
+        "left": {
+          "feature": "month_may",
+          "threshold": 0.5,
+          "left": {
+            "feature": "DC",
+            "threshold": 708.25,
+            "left": {
+              "feature": "temp",
+              "threshold": 24.199999809265137,
+              "left": {
+                "value": 0.45259519030174256
+              },
+              "right": {
+                "value": 1.266984479412555
+              }
+            },
+            "right": {
+              "feature": "wind",
+              "threshold": 6.050000190734863,
+              "left": {
+                "value": 0.8593805729442331
+              },
+              "right": {
+                "value": 2.7808582399949797
+              }
+            }
+          },
+          "right": {
+            "value": 3.675794214565281
+          }
+        },
+        "right": {
+          "feature": "RH",
+          "threshold": 32.5,
+          "left": {
+            "feature": "temp",
+            "threshold": 16.75,
+            "left": {
+              "feature": "DMC",
+              "threshold": 18.949999809265137,
+              "left": {
+                "value": 0.0
+              },
+              "right": {
+                "value": 1.7746055296913983
+              }
+            },
+            "right": {
+              "feature": "temp",
+              "threshold": 24.549999237060547,
+              "left": {
+                "value": 0.2502278204842519
+              },
+              "right": {
+                "value": 1.2269041197402024
+              }
+            }
+          },
+          "right": {
+            "feature": "temp",
+            "threshold": 20.65000057220459,
+            "left": {
+              "feature": "wind",
+              "threshold": 2.899999976158142,
+              "left": {
+                "value": 0.5478106864522048
+              },
+              "right": {
+                "value": 1.5174211063167207
+              }
+            },
+            "right": {
+              "feature": "Y",
+              "threshold": 4.5,
+              "left": {
+                "value": 3.884843641584805
+              },
+              "right": {
+                "value": 1.2146315805556134
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "feature": "temp",
+        "threshold": 32.849998474121094,
+        "left": {
+          "feature": "ISI",
+          "threshold": 9.449999809265137,
+          "left": {
+            "feature": "Y",
+            "threshold": 7.0,
+            "left": {
+              "feature": "DMC",
+              "threshold": 133.45000457763672,
+              "left": {
+                "value": 1.8863639156775998
+              },
+              "right": {
+                "value": 1.2626158401603331
+              }
+            },
+            "right": {
+              "value": 5.229824370102736
+            }
+          },
+          "right": {
+            "feature": "RH",
+            "threshold": 31.5,
+            "left": {
+              "feature": "DMC",
+              "threshold": 220.04999542236328,
+              "left": {
+                "value": 1.2609767044383842
+              },
+              "right": {
+                "value": 6.616439947564594
+              }
+            },
+            "right": {
+              "feature": "temp",
+              "threshold": 6.549999952316284,
+              "left": {
+                "value": 3.295836866004329
+              },
+              "right": {
+                "value": 0.8022751971747032
+              }
+            }
+          }
+        },
+        "right": {
+          "feature": "ISI",
+          "threshold": 14.200000286102295,
+          "left": {
+            "value": 3.311637304949512
+          },
+          "right": {
+            "value": 3.726656818447966
+          }
+        }
+      }
+    },
+    "right": {
+      "feature": "FFMC",
+      "threshold": 85.04999923706055,
+      "left": {
+        "feature": "DMC",
+        "threshold": 27.5,
+        "left": {
+          "feature": "day_fri",
+          "threshold": 0.5,
+          "left": {
+            "value": 2.300583090323373
+          },
+          "right": {
+            "value": 2.329227023940467
+          }
+        },
+        "right": {
+          "value": 2.5006159434931803
+        }
+      },
+      "right": {
+        "value": 2.816691706298304
+      }
+    }
+  }
+}
